@@ -7,3 +7,5 @@ Create Table employee_payroll
 Insert into employee_payroll values('Rajvardhan Singh', 2000, '2022-01-12')
 Insert into employee_payroll values('Akshay Pratap', 3000, '2021-12-06')
 Insert into employee_payroll values('Mohit Verma', 1800, '2022-03-30')
+
+Select * from employee_payroll
