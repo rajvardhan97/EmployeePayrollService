@@ -12,3 +12,9 @@ Select * from employee_payroll
 
 Select Salary from employee_payroll where Name = 'Rajvardhan Singh'
 Select Salary from employee_payroll where StartDate Between CAST('2021-12-10' as date) and GETDATE()
+
+Alter table employee_payroll 
+Add Gender varchar(1)
+
+Update employee_payroll set Gender = 'm'
+Update employee_payroll set Gender ='M' where Name = 'Rajvardhan Singh' or Name = 'Akshay Pratap'
