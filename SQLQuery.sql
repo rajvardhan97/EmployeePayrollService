@@ -26,3 +26,6 @@ select Max(Salary) as "MaximumSalary" from employee_payroll group by Gender;
 select count(Salary) as "CountSalary" from employee_payroll group by Gender;
 
 Alter table employee_payroll add PhoneNumber bigint, Address varchar(200) default 'Mumbai', Department varchar(100) not null default 'Marketing'
+
+Alter table employee_payroll add Basic_Pay int, Deductions int, Taxable_Pay int, Income_Tax int, Net_Pay int
+
