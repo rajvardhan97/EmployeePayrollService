@@ -24,3 +24,5 @@ select Avg(Salary) as "AverageSalary" from employee_payroll where Gender ='M' gr
 select Min(Salary) as "MinimumSalary" from employee_payroll group by Gender;
 select Max(Salary) as "MaximumSalary" from employee_payroll group by Gender;
 select count(Salary) as "CountSalary" from employee_payroll group by Gender;
+
+Alter table employee_payroll add PhoneNumber bigint, Address varchar(200) default 'Mumbai', Department varchar(100) not null default 'Marketing'
