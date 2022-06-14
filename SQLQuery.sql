@@ -29,3 +29,9 @@ Alter table employee_payroll add PhoneNumber bigint, Address varchar(200) defaul
 
 Alter table employee_payroll add Basic_Pay int, Deductions int, Taxable_Pay int, Income_Tax int, Net_Pay int
 
+Insert into employee_payroll (Name, Basic_Pay, StartDate, Gender)
+values('Terrisa', 2000, '2022-05-16', 'F')
+
+Update employee_payroll set Department = 'Sales' where Name = 'Terrisa'
+Insert into employee_payroll (Name, Department) values ('Terrisa', 'Marketing')
+
